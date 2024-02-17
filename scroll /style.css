@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div {
+  overflow-x: visible;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+p{
+  display: inline-block;
+  border: 1px solid red;
+  width: 100%;
+}

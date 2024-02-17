@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Application</title>
+
+  <link href="css/fontawesome.css" rel="stylesheet">
+  <link href="css/brands.css" rel="stylesheet">
+  <link href="css/solid.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header-section">
+    <div class="div1">
+      <h1>
+        Hello, Godwin
+      </h1>
+      <span>
+        <i class="fa-solid fa-bell"></i>
+      </span>
+    </div>
+
+    <div class="div2">
+      <div class="div2Info">
+        <h2 class="time">
+          01:06:54 pm
+        </h2>
+        <h5 class="date">
+          06/06/2000
+        </h5>
+      </div>
+      <div class="addTaskCont">
+        <button class="addTaskBtn">
+          Add Task
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tasksBody">
+    <ul class="tasks">
+     <!-- <div class="msg">
+        <h3>
+          Create a new task...
+        </h3>
+      </div>-->
+    </ul>
+  </div>
+
+  <div class="container hide">
+    <div class="todo-app">
+      <h2>Create a task
+        <img src="images/notes.png">
+      </h2>
+      <div class="row">
+        <input type="text" id="title" placeholder="Enter the task title here....">
+       
+        <input type="date" id="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+        
+        <textarea name="desc" id="desc" cols="15" rows="7" placeholder="Enter the task description here..."></textarea>
+        <button class="add">
+          ADD
+        </button>
+        <button class="cancel">
+          CANCEL
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

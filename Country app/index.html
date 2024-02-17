@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+   Everything country 
+  </title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <input type="text" id="word" placeholder="Country name or coordinates...">
+    <button type="submit" class="search"> search </button>
+  </div>
+  
+  <div class="app">
+    
+    <div class="skeleton">
+      <div class="flag-image skeleton-loading">
+        
+      </div>
+      
+     <div class="txts">
+       <div class="txtsH skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+     </div> 
+
+     <div class="txts">
+       <div class="txtsH skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+     </div> 
+     
+     <div class="txts">
+       <div class="txtsH skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+       <div class="txtsP skeleton-loading"></div>
+     </div> 
+    </div>
+    
+    <div class="container">
+      <div class="info">
+        <div class="aboutCountry">
+          <div class="flagCont" >
+            <img class="flag" srcset="https://flagcdn.com/w320/us.png" src="https://flagcdn.com/w320/us.png" alt="#">
+          </div>
+          <div>
+            <h1 class="name">
+              
+            </h1>
+            <p class="otn">
+             
+            </p>
+            <div class="other-names">
+              
+            </div>
+            <br>
+            <h4 class="infos">
+              More infos
+            </h4>
+            <div class="m-infos">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div id="map"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
